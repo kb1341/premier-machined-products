@@ -273,3 +273,43 @@ button {
   font-weight: 600;
   letter-spacing: 0.5px;
 }
+
+/* Shared Hero Section Overlay for all pages */
+.contact-hero,
+.service-hero,
+.about-hero {
+  position: relative;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* Overlay layer */
+.contact-hero::before,
+.services-hero::before,
+.about-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45); /* adjust opacity for readability */
+  z-index: 1;
+}
+
+/* Keep navbar + text above overlay */
+.contact-hero * ,
+.service-hero * ,
+.about-hero * {
+  position: relative;
+  z-index: 2;
+}
