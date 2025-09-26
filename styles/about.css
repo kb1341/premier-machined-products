@@ -1,0 +1,102 @@
+/* ========================
+   ABOUT PAGE STYLES
+   ======================== */
+
+/* Hero Section with Navbar Overlay */
+.about-hero {
+  background: url('../images/cinci_skyline.jpg') center/cover no-repeat;
+  height: 400px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.about-hero .navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.about-hero .navbar a {
+  color: #fff;
+}
+
+.about-hero h1 {
+  margin-top: 120px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* Services Section */
+/* .services-page {
+  padding: 60px 10%;
+  background-color: #fff;
+  color: #333;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-box {
+  background: #001f3f;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 1rem;
+  flex: 1 1 250px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.service-box img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.service-box h3 {
+  color: white;
+  margin: 0.5rem 0 0;
+  font-size: 1.2rem;
+} */
+
+/* Full-width Sticky Footer */
+footer {
+  background: white;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  width: 100vw;
+  margin: 0;
+  margin-left: calc(-50vw + 50%);
+  flex-shrink: 0;
+}
+
+.footer-text {
+  color: #001f3f;
+}
+
+footer .footer-logo {
+  max-height: 80px;
+  margin-bottom: 1rem;
+}
+

@@ -1,0 +1,155 @@
+/* ========================
+   CONTACT PAGE STYLES
+   ======================== */
+
+/* Hero Section with Navbar Overlay */
+.contact-hero {
+  background: url('../images/cinci_skyline.jpg') center/cover no-repeat;
+  height: 400px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.contact-hero .navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.contact-hero .navbar a {
+  color: #fff;
+}
+
+.contact-hero h1 {
+  margin-top: 120px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* Contact Section */
+.contact-page {
+  padding: 60px 10%;
+  background-color: #fff;
+  color: #333;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Contact Info */
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-info h2 {
+  margin-bottom: 1rem;
+  color: #003366;
+}
+
+.contact-info h3 {
+  margin-top: 1.5rem;
+  color: #001f3f;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+/* Contact Form */
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-form h2 {
+  margin-bottom: 1rem;
+  color: #003366;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-form button {
+  padding: 12px 20px;
+  background: #003366;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  align-self: flex-start;
+}
+
+.contact-form button:hover {
+  background: #0055aa;
+}
+
+/* Full-width Map */
+.map {
+  width: 100vw;
+  height: 450px;
+  border: none;
+  margin: 0;
+  margin-top: 20px;
+  margin-left: calc(-50vw + 50%);
+}
+
+/* Full-width Sticky Footer */
+footer {
+  background: white;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  width: 100vw;
+  margin: 0;
+  margin-left: calc(-50vw + 50%);
+  flex-shrink: 0; /* prevents footer from shrinking */
+}
+
+.footer-text {
+    color: #001f3f;
+}
+
+
+footer .footer-logo {
+  max-height: 80px;
+  margin-bottom: 1rem;
+}

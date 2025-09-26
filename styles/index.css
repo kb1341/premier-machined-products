@@ -1,0 +1,135 @@
+/* ========================
+   HOME PAGE STYLES
+   ======================== */
+
+/* Hero Section with Background Image */
+.home-hero {
+  background: url('../images/milling_image.jpg') center/cover no-repeat;
+  height: 100vh; /* full viewport height */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+/* Navbar inside Hero */
+.home-hero .navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+/* Navbar Logo */
+.navbar .logo img {
+  width: 288px;
+  height: 96px;
+  object-fit: contain; /* keeps proportions inside box */
+}
+
+
+.home-hero .navbar a {
+  color: #fff;
+}
+
+.home-hero .hero-content {
+  margin-top: 120px;
+  max-width: 700px;
+}
+
+.home-hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* Services Section */
+/* .services {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 60px auto;
+}
+
+.service-box {
+  text-align: center;
+}
+
+.service-box img {
+  max-width: 250px;
+  border-radius: 8px;
+} */
+ /* Services Section */
+/* Services Section */
+.services {
+  display: flex;
+  justify-content: center;   /* centers all boxes horizontally */
+  gap: 2rem;                 /* space between boxes */
+  flex-wrap: wrap;           /* wrap to new row on small screens */
+  text-align: center;        /* center text inside */
+  margin: 60px auto;
+  max-width: 1200px;
+}
+
+.service-box {
+  flex: 1 1 250px;           /* grow/shrink with min width */
+  max-width: 300px;          /* keeps consistent size */
+  display: flex;
+  flex-direction: column;    /* stack image and text vertically */
+  align-items: center;       /* center content */
+}
+
+.service-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.service-box h3 {
+  margin-top: 1rem;          /* space between image and title */
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: center;
+}
+
+
+
+/* CTA Section */
+.cta {
+  background: #001f3f;
+  color: #fff;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.cta h2 {
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  background: #001f3f;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+footer .footer-logo {
+  max-height: 80px;
+  margin-bottom: 1rem;
+}
