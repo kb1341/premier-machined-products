@@ -294,7 +294,7 @@ button {
 
 /* Overlay layer */
 .contact-hero::before,
-.services-hero::before,
+.service-hero::before,
 .about-hero::before {
   content: "";
   position: absolute;
@@ -312,4 +312,26 @@ button {
 .about-hero * {
   position: relative;
   z-index: 2;
+}
+
+/* Contact Page Mobile Fix */
+@media (max-width: 768px) {
+  .map {
+    width: 100%;
+    height: 350px;
+    display: block;
+  }
+
+  footer {
+    margin-top: 1rem;   /* ensure it sits below the map */
+    position: relative; /* prevent overlap */
+    z-index: 1;         /* keeps it above map if needed */
+  }
+
+  footer .footer-logo {
+    display: block;
+    margin: 1rem auto;  /* center logo */
+    max-width: 200px;   /* resize for smaller screens */
+    height: auto;
+  }
 }
